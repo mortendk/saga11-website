@@ -27,7 +27,7 @@ permalink: styleguide/index.html
       mode: {{ env.mode }}
       theme: {{ theme }}
 
-      url: {{ env.url }}
+      url: {{ env.url }}{{ process.env.URL }}
       gitbranch: {{ env.branch }}
 
       root: {{ env.root }}

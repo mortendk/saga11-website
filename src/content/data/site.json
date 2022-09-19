@@ -1,16 +1,16 @@
 {
   "zip": "",
-  "humantxt": "/* TEAM */\n\n/* THANKS */\n\n/* SITE */\nStandards: HTML5, CSS3\nBuild on: 11ty with magic \n\n/* Software + Assets */\nvscode: https://code.visualstudio.com\nresponsively: https://responsively.app\n\nhttps://saga11.dev\nhttps://11ty.dev\nhttps://tailwindcss.com\n\nIcons\nhttps://heroicons.com/\n",
-  "color": "#3a5961",
-  "keywords": "",
-  "header": "",
+  "humantxt": "/* TEAM */\n\n/* THANKS */\n\n/* SITE */\nStandards: HTML5, CSS3 \nBuild on: 11ty\n\n/* Software + Assets */\nvscode: https://code.visualstudio.com\nresponsively: https://responsively.app\n\nhttps://saga11.dev\nhttps://11ty.dev\nhttps://tailwindcss.com\n\nIcons\nhttps://heroicons.com/\n",
+  "color": "#7323af",
+  "keywords": "cms, static site, small cms",
+  "header": "<script defer data-domain=\"saga11.dev\" src=\"https://plausible.io/js/plausible.js\"></script>\n",
   "authoremail": "",
   "rss": true,
   "adress": "",
-  "authorname": "",
+  "authorname": "Saga 11",
   "country": "",
-  "errorpage": "404 Ush It haz broken",
+  "errorpage": "404 !",
   "title": "Saga Eleven",
-  "footer": "[saga11.dev](https://saga11.dev)\n",
-  "description": ""
+  "footer": "",
+  "description": "Small cms for static generated websites"
 }
