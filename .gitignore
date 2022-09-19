@@ -1,0 +1,12 @@
+_site/
+node_modules/
+.DS_Store
+
+# Local Netlify folder
+.netlify
+.env
+.cache
+
+# saga build
+src/themes/grunn/assets/css/style.css
+src/themes/grunn/assets/css/style.min.css

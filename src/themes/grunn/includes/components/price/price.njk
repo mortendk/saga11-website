@@ -1,0 +1,75 @@
+{%- if env.mode != 'prod' %}  <!-- src/__includes/components/price/price.njk -->{%- endif -%}
+
+<section class="py-4">
+
+  <article class="mx-auto max-w-3xl">
+
+    <h3 class="text-5xl text-cyan-700 text-center mb-4">
+      {{ component.title }}
+    </h3>
+
+    {% if component.text %}
+      <div class="prose prose-xl text-center">
+        {{ component.text  | markdown | safe  }}
+      </div>
+    {% endif %}
+
+  </article>
+
+  {# wrapper for the list #}
+  <div class="flex flex-row justify-center mx-auto max-w-7xl mt-8">
+  {# Price list #}
+  {% for item in component.price %}
+
+    <article class="w-80 border shadow rounded-md bg-white p-4 mx-2  {% if item.featured %} border-cyan-300 {% endif %}">
+
+      <h3 class="text-4xl text-cyan-700 mt-6 mb-4 text-center">
+        {{ item.title }}
+      </h3>
+
+      <div class="text-3xl text-cyan-800 bg-slate-50 text-center py-4 -ml-4 -mr-4 mb-4">
+        {{ item.price }}
+      </div>
+
+      <div class="flex justify-center py-4">
+
+        <a href="{{ item.url }}"
+          class="px-4 py-3 rounded font-bold
+          bg-sky-200 border  border-sky-400
+          hover:bg-sky-300
+        "> Get this one </a>
+
+      </div>
+
+      {% if item.text %}
+        <div class="prose">
+          {{ item.text  | markdown | safe  }}
+        </div>
+      {% endif %}
+
+      {# price elements #}
+      {% for element in item.elements %}
+        <div class="flex flex-row items-center">
+          {# icon #}
+          {% if element.active %}
+            <div class="w-5 text-cyan-500">
+              {% include "svg/check-badge.svg" %}
+            </div>
+            <div class="p-2 bold">
+          {% else %}
+            <div class="w-5 text-slate-300">
+              {% include "svg/check.svg" %}
+            </div>
+            <div class="line-through text-slate-400">
+          {% endif %}
+
+          {{ element.title }}
+        </div>
+      </div>
+      {% endfor %}
+      {# /price elements #}
+    </article>
+  {% endfor %}
+  {# /Price list #}
+  </div>
+</section>

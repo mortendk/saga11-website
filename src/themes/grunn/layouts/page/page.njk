@@ -1,0 +1,21 @@
+---
+layout: default.njk
+saga-template-name: Page default
+---
+{# PAGE DEFAULT TEAMPLATE
+------------------------------------------------
+This is the default template for the page type
+#}
+{%- if env.mode != 'prod' %}<!-- ___layouts/page/page.njk  -->{%- endif -%}
+
+{% include "nav/breadcrumb.njk" %}
+
+<h1 class="text-cyan-700 text-8xl mb-8 text-center">{{ title }}</h1>
+
+
+
+
+{# List all page compoenents #}
+{% include "components/all.njk" %}
+
+{{ content | safe}}
