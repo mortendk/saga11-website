@@ -6,7 +6,7 @@ eleventyNavigation:
   title: Core Values
   order: 0
 layout: page/page.njk
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 ---
 
 ## Core Values

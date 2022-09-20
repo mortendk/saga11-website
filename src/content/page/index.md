@@ -27,9 +27,14 @@ components:
   - type: text
     template: components/text/text.njk
     text: |
-      
+
       ## Quick start
 
+      clone
+
+      ```
+      gh repo clone mortendk/saga11
+      ```
       1. install saga
 
       ```

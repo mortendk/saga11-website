@@ -15,7 +15,7 @@ eleventyNavigation:
   key: themes
   order: 20
 layout: page/page.njk
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 ---
 
 The system ships with 2 themes:

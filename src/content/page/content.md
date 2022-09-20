@@ -1,14 +1,14 @@
 ---
 title: content
 card:
-  title: "content model"
+  title: content model
 url: content
 eleventyNavigation:
   parent: main
   title: Content model
   order: 10
 layout: page/page.njk
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 ---
 
 Markdown is used for content with frontmatter for data

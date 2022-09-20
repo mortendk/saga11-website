@@ -15,7 +15,7 @@ eleventyNavigation:
   key: components
   order: 20
 layout: page/page.njk
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 ---
 
 A page is build by componenets a card and a free text field\
