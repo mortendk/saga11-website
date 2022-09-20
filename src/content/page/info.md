@@ -1,9 +1,9 @@
 ---
 title: Core Values
-url: info
+url: core-values
 eleventyNavigation:
   parent: main
-  title: Info
+  title: Core Values
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---
