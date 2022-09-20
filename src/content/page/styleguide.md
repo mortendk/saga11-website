@@ -7,7 +7,7 @@ tags:
   - themes
 url: themes/styleguide
 eleventyNavigation:
-  parent: main
+  parent: ""
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---

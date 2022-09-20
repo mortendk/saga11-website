@@ -7,7 +7,7 @@ tags:
   - themes
 url: themes/nakinn
 eleventyNavigation:
-  parent: main
+  parent: ""
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---

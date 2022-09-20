@@ -2,7 +2,7 @@
 title: pagepage
 url: pagepage
 eleventyNavigation:
-  parent: main
+  parent: ""
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---
