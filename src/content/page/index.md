@@ -10,73 +10,81 @@ components:
   - type: text
     template: components/text/text.njk
     title: saga11
-    text: >-
-      Saga11 is a system to build static websites.
+    text: >
+      Saga eleven - A Static Website builder powered by 11ty and netlifycms
 
 
-      Its created cause of the need for a light cms where the webdesigner can completely control what goes on and content is just content, and templates are in complete control of the output
+      Requirements: node + github + some knowledge of 11ty
 
 
-      The core value is that at the end its just HTML & CSS and we should not ship more to the end user.
+      ## ⚠️Super duper alpa version 0.2
 
 
-      We want to make the fastes websites thats possible and perfectly markup/css/js everytime.
+      Fair warning this is still in alpha ;)
 
-
-      So theres no fancy libraries, spa or anything else its just a website - delivering the content as fast and as clean as possible to the users
-  - type: text
-    template: components/text/text.njk
-    text: |
 
       ## Quick start
 
-      clone
 
-      ```
-      gh repo clone mortendk/saga11
-      ```
       1. install saga
 
+
       ```
+
       $ npm install
+
       ```
+
 
       2. Spin it up:
 
+
       ```
+
       $ npm  start
-      ```
-
-      http://localhost:3791
-
-      3. build the production site
 
       ```
-      npm build
+
+
+      👉 To make the admin work clone the env.example to .env
+
+      (else the system dont know where the admin is)
+
+
+      🤖 go to the [admin interface admin](/admin)
+
+
+      💅 Themes are in /src/themes/
+
+      The are configured in /saga11.config.js
+
+
+      📜 content is in /src/content/
+
+
+      🎈 saga11 is build on top of [11ty](https://11ty.dev) & [NetlifyCMS](https://netlifycms.com)
+
+
+      🪲 bugs & comments [github](https://github.com/mortendk/saga11)
+
+
+      📲 PWA statupscreen
+
+
       ```
 
-      ## Notes
-
-      ### local envirotment
-
-      set up an .env file for production copy the env.example to .env
-
-      ### Change theme
-
-      open saga11.config.js and change the theme
-
-      modify the scripts for your need in package.json
-
-      ### Build startscreens for PWA
-
-      ```
       $ npm run splash-screens:build
-      ```
-
-      ### Cleanup the build folder
 
       ```
+
+
+      🗑 Cleanup the build folder
+
+
+      ```
+
       $ npm run cleanup
+
       ```
   - type: features
     template: components/feature/feature.njk
