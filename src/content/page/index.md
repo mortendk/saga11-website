@@ -1,6 +1,11 @@
 ---
 title: Saga11
 image: ""
+card:
+  title: Saga11 Static Websites FTW
+  text: |-
+    Saga11 is a static website generator build on the shoulders of 11ty
+    Build for webdesigners & others with an unhealthy obsession of markup
 components:
   - type: text
     template: components/text/text.njk
@@ -22,7 +27,7 @@ components:
   - type: text
     template: components/text/text.njk
     text: |
-
+      
       ## Quick start
 
       1. install saga
