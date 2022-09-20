@@ -5,7 +5,7 @@ card:
 url: content
 eleventyNavigation:
   parent: main
-  title: content
+  title: Content
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---
