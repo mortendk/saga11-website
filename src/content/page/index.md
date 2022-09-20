@@ -2,6 +2,23 @@
 title: Saga11
 image: ""
 components:
+  - type: image
+    template: components/image/image.njk
+    title: saga11
+    text: >-
+      Saga11 is a system to build static websites.
+
+
+      Its created cause of the need for a light cms where the webdesigner can completely control what goes on and content is just content, and templates are in complete control of the output
+
+
+      The core value is that at the end its just HTML & CSS and we should not ship more to the end user.
+
+
+      We want to make the fastes websites thats possible and perfectly markup/css/js everytime.
+
+
+      So theres no fancy libraries, spa or anything else its just a website - delivering the content as fast and as clean as possible to the users
   - type: text
     template: components/text/text.njk
     text: |
