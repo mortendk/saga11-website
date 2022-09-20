@@ -2,8 +2,8 @@
 title: Saga11
 image: ""
 components:
-  - type: image
-    template: components/image/image.njk
+  - type: text
+    template: components/text/text.njk
     title: saga11
     text: >-
       Saga11 is a system to build static websites.
@@ -22,7 +22,7 @@ components:
   - type: text
     template: components/text/text.njk
     text: |
-      
+
       ## Quick start
 
       1. install saga
@@ -70,7 +70,7 @@ components:
       ```
   - type: features
     template: components/feature/feature.njk
-    title: "11 awesome "
+    title: "11 Reasons "
     feature:
       - title: Themes in control
         text: |-
@@ -78,9 +78,9 @@ components:
           e﻿ach component have templates
       - title: NO database
         text: |-
-          L﻿ike really really fast and unbreakable 
+          L﻿ike really really fast and unbreakable
 
-          Static websites ftw :) 
+          Static websites ftw :)
       - title: "Design Components "
         text: "Build with the power of NetlifyCMS the editing experience can be done
           through the browser instad of a text editor "
@@ -89,7 +89,7 @@ components:
       - title: Fast & Secure
         text: |-
           L﻿ike really really fast.
-          Static websites ftw :) 
+          Static websites ftw :)
       - title: "RSS "
         text: S﻿hare your website with the world with the amazing RSS feeds
       - title: 100/100/100/100/100

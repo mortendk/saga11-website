@@ -1,15 +1,19 @@
 ---
 title: content
 card:
-  title: "build content "
+  title: "content model"
 url: content
 eleventyNavigation:
   parent: main
-  title: Content
+  title: Content model
+  order: 10
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---
-H﻿ow the contet model works 
+
+Markdown is used for content with frontmatter for data
+
+### page.md:
 
 ```haml
 ---

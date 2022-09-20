@@ -11,6 +11,5 @@ eleventyNavigation:
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---
-B﻿uild in styleguide \
-\
-/﻿styleguide
+
+Theres a simple styleguide build in with dummy data for all design components

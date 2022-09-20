@@ -4,7 +4,7 @@ components:
   - type: links
     template: components/link/link.njk
     title: Links collection
-    text: L﻿inks for resourses that saga 11 builds on
+    text: Were standing on the shoulds of these great projects
     link:
       - url: https://mozilla.github.io/nunjucks/templating.html
         title: Nunjucks
@@ -23,6 +23,7 @@ eleventyNavigation:
   parent: main
   title: Resources
   key: resources
+  order: 200
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---

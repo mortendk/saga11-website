@@ -13,9 +13,11 @@ eleventyNavigation:
   parent: main
   title: Components
   key: components
+  order: 20
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---
+
 A page is build by componenets a card and a free text field\
 \
 T﻿he card is used for opengraph (sharing on Social Media) \

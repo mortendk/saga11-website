@@ -13,9 +13,11 @@ eleventyNavigation:
   parent: main
   title: Themes
   key: themes
+  order: 20
 layout: page/page.njk
 eleventyExcludeFromCollections: false
 ---
+
 The system ships with 2 themes:
 
 ### Grunn
