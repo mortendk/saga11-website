@@ -1,7 +1,7 @@
 ---
 title: Styleguide
 eleventyNavigation:
-  url: https://saga11dev/styleguide/
+  url: https://saga11.dev/styleguide/
   target: true
   parent: main
   title: Styleguide
