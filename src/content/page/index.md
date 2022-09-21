@@ -10,7 +10,20 @@ components:
   - type: text
     template: components/text/text.njk
     title: saga11
-    text: >
+    text: >-2
+       ﻿[G﻿ithub repo](https://github.com/mortendk/saga11)
+
+      ```shell
+
+      gh repo clone mortendk/saga11
+
+      ```
+
+
+      \
+
+      \
+
       Saga eleven - A Static Website builder powered by 11ty and netlifycms
 
 
@@ -29,7 +42,7 @@ components:
       1. install saga
 
 
-      ```
+      ```shell
 
       $ npm install
 
@@ -39,7 +52,7 @@ components:
       2. Spin it up:
 
 
-      ```
+      ```shell
 
       $ npm  start
 
@@ -71,7 +84,7 @@ components:
       📲 PWA statupscreen
 
 
-      ```
+      ```shell
 
       $ npm run splash-screens:build
 
@@ -81,7 +94,7 @@ components:
       🗑 Cleanup the build folder
 
 
-      ```
+      ```shell
 
       $ npm run cleanup
 
