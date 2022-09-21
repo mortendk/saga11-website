@@ -1,6 +1,6 @@
 ---
 title: Saga11
-image: ""
+image: /upload/facebook.jpg
 card:
   title: Saga11 Static Websites FTW
   text: |-
@@ -10,8 +10,7 @@ components:
   - type: text
     template: components/text/text.njk
     title: saga11
-    text: >-2
-       ﻿[G﻿ithub repo](https://github.com/mortendk/saga11)
+    text: >-
 
       ```shell
 
@@ -142,3 +141,13 @@ eleventyNavigation:
 layout: page/frontpage.njk
 eleventyExcludeFromCollections: false
 ---
+
+## Hello World 👋
+
+Saga11 is a static website builder made for webdesigners that wants complete control of the end markup without any overhead or complex systems to battle with
+
+Its just markdown + html + css 💜
+
+theres a cms in the backend if you dont want to fiddle with the markdown files.
+
+🤌 Get the code : [G﻿ithub repo](https://github.com/mortendk/saga11)

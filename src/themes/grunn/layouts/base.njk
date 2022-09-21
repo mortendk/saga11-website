@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
   lang="en"
-  class="scroll-smooth"
+  class="scroll-smooth dark"
   x-data="{ darkMode: localStorage.getItem('themeDarkMode') === 'true' }"
   x-init="$watch('darkMode', val => localStorage.setItem('themeDarkMode', val))"
   x-bind:class="{ 'dark': darkMode }"

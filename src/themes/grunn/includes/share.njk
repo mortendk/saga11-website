@@ -1,38 +1,41 @@
 {%- if env.mode != 'prod' %}  <!-- __includes/share.njk  -->{%- endif  -%}
 {% set thisurl = env.url + page.url %}
 
-<div class="flex mt-4 items-center">
-Share:
-{# pinterest #}
-<a
-  class="block w-8"
-  href="http://pinterest.com/pin/create/link/?url={{ thisurl }}"
-  target="_blank" rel="noopener noreferrer nofollow">
-  {% include "svg/some/pinterest.svg" %}
-</a>
+<div class="text-center felx flex-col ">
+share
+  <div class="flex space-x-4 mt-4 items-center justify-center">
 
-{# twitter #}
-<a
-  class="block w-8"
-  href="https://twitter.com/intent/tweet?text={{thisurl}}%20%23hashtag%20%40{{some.twitter}}"
-  target="_blank" rel="noopener noreferrer nofollow">
-  {% include "svg/some/twitter.svg" %}
-</a>
+  {# pinterest #}
+  {# <a
+    class="block w-8"
+    href="http://pinterest.com/pin/create/link/?url={{ thisurl }}"
+    target="_blank" rel="noopener noreferrer nofollow">
+    {% include "svg/some/pinterest.svg" %}
+  </a> #}
 
-{# fb  #}
-<a
-  class="block w-8"
-  href="https://www.facebook.com/sharer/sharer.php?u={{ thisurl }}"
-  target="_blank" rel="noopener noreferrer nofollow">
-  {% include "svg/some/facebook.svg" %}
-</a>
+  {# twitter #}
+  <a
+    class="block w-8 text-[#1DA1F2]"
+    href="https://twitter.com/intent/tweet?text=All%20your%20markup%20are%20belong%20to%20us!%20{{thisurl}}%20%23saga11%20%40{{some.twitter}}"
+    target="_blank" rel="noopener noreferrer nofollow">
+    {% include "svg/some/twitter.svg" %}
+  </a>
 
-{# linkedin #}
-<a
-  class="block w-8"
-  target="_blank" rel="noopener noreferrer nofollow"
-  href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ thisurl }}&amp;title={{title}}&amp;summary={{teaser}}&amp;source={{site.title}}">
-  {% include "svg/some/linkedin.svg" %}
-</a>
+  {# fb  #}
+  <a
+    class="block w-8 text-[#1877F2]"
+    href="https://www.facebook.com/sharer/sharer.php?u={{ thisurl }}"
+    target="_blank" rel="noopener noreferrer nofollow">
+    {% include "svg/some/facebook.svg" %}
+  </a>
 
+  {# linkedin #}
+  <a
+    class="block w-8 text-[#0077b5]"
+    target="_blank" rel="noopener noreferrer nofollow"
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ thisurl }}&amp;title={{title}}&amp;summary={{teaser}}&amp;source={{site.title}}">
+    {% include "svg/some/linkedin.svg" %}
+  </a>
+
+  </div>
 </div>
