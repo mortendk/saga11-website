@@ -144,10 +144,8 @@ eleventyExcludeFromCollections: false
 
 ## Hello World 👋
 
-Saga11 is a static website builder made for webdesigners that wants complete control of the end markup without any overhead or complex systems to battle with
+Saga11 is a static website builder made for webdesigners that wants complete control of the end markup without any overhead or complex systems to battle with. 💜
 
-Its just markdown + html + css 💜
+btw Theres a cms in the backend if you dont want to fiddle with the markdown files.
 
-theres a cms in the backend if you dont want to fiddle with the markdown files.
-
-🤌 Get the code : [G﻿ithub repo](https://github.com/mortendk/saga11)
+🤌 Get the code in super duper beta version : [G﻿ithub repo](https://github.com/mortendk/saga11)
