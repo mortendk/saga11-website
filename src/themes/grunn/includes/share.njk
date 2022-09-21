@@ -18,6 +18,7 @@ share
     class="block w-8 text-[#1DA1F2]"
     href="https://twitter.com/intent/tweet?text=All%20your%20markup%20are%20belong%20to%20us!%20{{thisurl}}%20%23saga11%20%40{{some.twitter}}"
     target="_blank" rel="noopener noreferrer nofollow">
+    <div class="sr-only">twitter</div>
     {% include "svg/some/twitter.svg" %}
   </a>
 
@@ -26,6 +27,7 @@ share
     class="block w-8 text-[#1877F2]"
     href="https://www.facebook.com/sharer/sharer.php?u={{ thisurl }}"
     target="_blank" rel="noopener noreferrer nofollow">
+    <div class="sr-only">facebook</div>
     {% include "svg/some/facebook.svg" %}
   </a>
 
@@ -34,6 +36,7 @@ share
     class="block w-8 text-[#0077b5]"
     target="_blank" rel="noopener noreferrer nofollow"
     href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ thisurl }}&amp;title={{title}}&amp;summary={{teaser}}&amp;source={{site.title}}">
+    <div class="sr-only">Linked</div>
     {% include "svg/some/linkedin.svg" %}
   </a>
 
