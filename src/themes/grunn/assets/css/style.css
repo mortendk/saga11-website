@@ -3046,16 +3046,6 @@ form button:focus {
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
-.text-cyan-900 {
-  --tw-text-opacity: 1;
-  color: rgb(22 78 99 / var(--tw-text-opacity));
-}
-
-.text-cyan-200 {
-  --tw-text-opacity: 1;
-  color: rgb(165 243 252 / var(--tw-text-opacity));
-}
-
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -3672,6 +3662,10 @@ pre[class*="language-"] {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -3704,6 +3698,10 @@ pre[class*="language-"] {
     flex-direction: row;
   }
 
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .md\:bg-slate-100 {
     --tw-bg-opacity: 1;
     background-color: rgb(241 245 249 / var(--tw-bg-opacity));
@@ -3711,6 +3709,11 @@ pre[class*="language-"] {
 
   .md\:text-\[20rem\] {
     font-size: 20rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
