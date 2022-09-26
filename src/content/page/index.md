@@ -35,15 +35,17 @@ components:
 
       ```
 
+      The site is ready for local development on port 3791
+
+      👩‍💻 localhost:3791
 
       ### ✍️ Admin interface
 
       To make the admin work clone the env.example to .env
-
       (else the system dont know where the admin is)
 
 
-      👉 Go to the [admin interface admin](/admin)
+      👉 localhost:3791/admin
 
       ⌨️ Keyboard shortcut  cmd + shift + e
 
@@ -58,7 +60,6 @@ components:
       Content is in "/src/content/"
 
 
-
       3. Create the PWA statupscreen
 
 
@@ -68,8 +69,18 @@ components:
 
       ```
 
+      ## 🚚 Build to Production
 
-      4. Cleanup the build folder
+      4. Now The site is ready to be published, build it and send it to the internet!
+
+      ```shell
+
+      $ npm build
+
+      ```
+
+
+      5. Cleanup the build folder - just to remove the clutter
 
 
       ```shell
