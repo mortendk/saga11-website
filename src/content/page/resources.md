@@ -25,5 +25,5 @@ eleventyNavigation:
   key: resources
   order: 200
 layout: page/page.njk
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 ---
