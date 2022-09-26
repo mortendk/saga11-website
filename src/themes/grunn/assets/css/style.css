@@ -3618,6 +3618,11 @@ pre[class*="language-"] {
   border-color: rgb(204 251 241 / var(--tw-border-opacity));
 }
 
+.dark .dark\:border-slate-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 41 59 / var(--tw-border-opacity));
+}
+
 .dark .dark\:border-b-slate-500 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(100 116 139 / var(--tw-border-opacity));

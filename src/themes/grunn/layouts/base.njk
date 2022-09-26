@@ -2,7 +2,7 @@
 <html
   lang="en"
   class="scroll-smooth"
-  x-data="{ darkMode: localStorage.getItem('themeDarkMode') === 'true' }"
+  x-data="{ darkMode: localStorage.getItem('themeDarkMode') !== 'true' }"
   x-init="$watch('darkMode', val => localStorage.setItem('themeDarkMode', val))"
   x-bind:class="{ 'dark': darkMode }"
 >
