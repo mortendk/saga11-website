@@ -14,7 +14,7 @@ components:
 
       ## Quick start
 
-      [Download beta 0.3.0](https://github.com/mortendk/saga11/archive/refs/tags/v.0.3.0-beta.zip)
+      ### ⬇️ [Download beta 0.3.0](https://github.com/mortendk/saga11/archive/refs/tags/v.0.3.0-beta.zip)
 
       1. install saga
 
