@@ -1953,6 +1953,10 @@ form button:focus {
   margin-right: -1rem;
 }
 
+.-mt-20 {
+  margin-top: -5rem;
+}
+
 .block {
   display: block;
 }
@@ -3752,6 +3756,14 @@ pre[class*="language-"] {
     margin-right: 1rem;
   }
 
+  .md\:-ml-8 {
+    margin-left: -2rem;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -3794,6 +3806,11 @@ pre[class*="language-"] {
 
   .md\:max-w-7xl {
     max-width: 80rem;
+  }
+
+  .md\:rotate-2 {
+    --tw-rotate: 2deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:grid-cols-3 {
@@ -3857,6 +3874,10 @@ pre[class*="language-"] {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:py-20 {

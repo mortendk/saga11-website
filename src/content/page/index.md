@@ -103,7 +103,7 @@ components:
           types & components have each seperate template files for über customization.
         icon: icons/paint-brush.svg
       - title: "Content types & Components "
-        text: Pages, stories % noticiation content types and pagebuilding with html components.
+        text: Pages, stories & noticiation content types + pagebuilding with html components.
         icon: icons/adjustments-horizontal.svg
       - title: Static Web + CMS  = Awesome
         text: Use Netflifycms to edit the content or use the texteditor for extra nerd points.
@@ -145,12 +145,12 @@ layout: page/frontpage.njk
 eleventyExcludeFromCollections: false
 ---
 
-# Hello World 👋
+### 👋
 
-## HTML + Markdown + CSS = 💜
+## Markdown + HTML + CSS = 💜
 
-Saga11 is a static website builder for webdesigners that want:
+**Saga11** is a static website builder for webdesigners that dreams of:
 
-1. A complete control of HTML ,CSS & JS.
-2. Dodge the complexety of "modern" web.
-3. CMS for editing but without a database.
+1. Complete über control of HTML, CSS & JS.
+2. ~~The complexety of "modern" web.~~
+3. CMS for editing but witout a database
