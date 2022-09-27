@@ -10,23 +10,20 @@ Specfic page to control the layout for the frontpage
 #}
 {%- if env.mode != 'prod' %}<!-- /Users/mdk/Web/saga11/src/themes/grunn/layouts/page/frontpage.njk  -->{%- endif -%}
 
-{# <article class="flex flex-col md:flex-row mt-4"> #}
-  {# <div class="aspect-video overflow-hidden">
+<article class="flex flex-col md:flex-row">
+  <div class="aspect-video overflow-hidden mt-4">
     {% picture
-      img=image,
-      width=[640,1024, 1563],
-      sizes="(max-width: 640px) 50vw, 100vw",
-      css="shadow rounded-xl",
-      loading = "eager"
+        img=image,
+        width=[400,800],
+        sizes="(min-width: 1024px) 50vw, 100vw",
+        css="shadow rounded-xl r",
+        loading = "eager"
     %}
-  </div> #}
+  </div>
 
-  <article class="prose prose-xl prose-invert mx-auto p-4
-                  rounded-md shadow-xl bg-slate-700
-                  border border-slate-100 dark:border-slate-800">
+  <div class="prose prose-xl dark:prose-invert mt-4 md:mt-0 md:ml-4 p-4 bg-white rounded-md shadow-md dark:bg-slate-700">
     {{ content | safe }}
-  </article>
-
-{# </article> #}
+  </div>
+</article>
 
 {% include "components/all.njk" %}
