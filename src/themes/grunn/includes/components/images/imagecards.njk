@@ -1,12 +1,16 @@
-{#
-------------------------------------------------
-GALLERY image cards
-------------------------------------------------
-#}
-{%- if env.mode != 'prod' %}  <!-- __includes/components/images/imagecards.njk -->{%- endif -%}
+
+{%- if env.mode != 'prod' %}  <!-- src/themes/grunn/includes/components/images/imagecards.njk -->{%- endif -%}
 
 {% if component.images | length %}
 <div class="grid md:grid-cols-4 gap-2 my-4">
+  {{ item.title }}
+
+  {% if item.text %}
+  <div>
+  {{ item.text | markdown |safe }}
+  </div>
+  {% endif %}
+
 
   {% for item in component.images %}
   <article aria-label="image item {{loop.index}}" class="">

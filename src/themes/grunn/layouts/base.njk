@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html
   lang="en"
-  class="scroll-smooth dark"
-  x-data="{ darkMode: localStorage.getItem('themeDarkMode') === 'true' }"
+  class="scroll-smooth"
+  x-data="{ darkMode: localStorage.getItem('themeDarkMode') !== 'true' }"
   x-init="$watch('darkMode', val => localStorage.setItem('themeDarkMode', val))"
   x-bind:class="{ 'dark': darkMode }"
 >
@@ -10,7 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% if site.description %}
+
+    {% if card.text %}
+      <meta name="description" content="{{ card.text }}">
+    {% else  %}
       <meta name="description" content="{{ site.description }}">
     {% endif %}
 
@@ -50,8 +53,6 @@
     {% endif %}
 
   </head>
-
-
 
   {{ content | safe }}
 

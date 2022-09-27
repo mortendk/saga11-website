@@ -1,4 +1,4 @@
 ---
-title: componenets
+title: components
 eleventyExcludeFromCollections: false
 ---

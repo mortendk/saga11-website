@@ -12,31 +12,9 @@ components:
     title: saga11
     text: >-
 
-      ```shell
-
-      gh repo clone mortendk/saga11
-
-      ```
-
-
-      \
-
-      \
-
-      Saga eleven - A Static Website builder powered by 11ty and netlifycms
-
-
-      Requirements: node + github + some knowledge of 11ty
-
-
-      ## ⚠️Super duper alpa version 0.2
-
-
-      Fair warning this is still in alpha ;)
-
-
       ## Quick start
 
+      ### ⬇️ [Download beta 0.3.0](https://github.com/mortendk/saga11/archive/refs/tags/v.0.3.0-beta.zip)
 
       1. install saga
 
@@ -57,30 +35,32 @@ components:
 
       ```
 
+      The site is ready for local development on port 3791
 
-      👉 To make the admin work clone the env.example to .env
+      👩‍💻 localhost:3791
 
+      ### ✍️ Admin interface
+
+      To make the admin work clone the env.example to .env
       (else the system dont know where the admin is)
 
 
-      🤖 go to the [admin interface admin](/admin)
+      👉 localhost:3791/admin
 
+      ⌨️ Keyboard shortcut  cmd + shift + e
 
-      💅 Themes are in /src/themes/
+      ### 💅 Themes
+
+      Themes are in /src/themes/...
 
       The are configured in /saga11.config.js
 
+      ### 📜 Content
 
-      📜 content is in /src/content/
-
-
-      🎈 saga11 is build on top of [11ty](https://11ty.dev) & [NetlifyCMS](https://netlifycms.com)
+      Content is in "/src/content/"
 
 
-      🪲 bugs & comments [github](https://github.com/mortendk/saga11)
-
-
-      📲 PWA statupscreen
+      3. Create the PWA statupscreen
 
 
       ```shell
@@ -89,8 +69,18 @@ components:
 
       ```
 
+      ## 🚚 Build to Production
 
-      🗑 Cleanup the build folder
+      4. Now The site is ready to be published, build it and send it to the internet!
+
+      ```shell
+
+      $ npm build
+
+      ```
+
+
+      5. Cleanup the build folder - just to remove the clutter
 
 
       ```shell
@@ -98,41 +88,54 @@ components:
       $ npm run cleanup
 
       ```
+
+      🎈 Saga11 is build on top of [11ty](https://11ty.dev) & [NetlifyCMS](https://www.netlifycms.org/)
+
+
+      🪲 Bugs & comments [github](https://github.com/mortendk/saga11)
   - type: features
     template: components/feature/feature.njk
     title: "11 Reasons "
     feature:
-      - title: Themes in control
-        text: |-
-          The templates is controlling everything
-          e﻿ach component have templates
-      - title: NO database
-        text: |-
-          L﻿ike really really fast and unbreakable
-
-          Static websites ftw :)
-      - title: "Design Components "
-        text: "Build with the power of NetlifyCMS the editing experience can be done
-          through the browser instad of a text editor "
+      - title: Templates is king!
+        text: >
+          The templates are in complete control over the output. Content
+          types & components have each seperate template files for über customization.
+        icon: icons/paint-brush.svg
+      - title: "Content types & Components "
+        text: Pages, stories & noticiation content types + pagebuilding with html components.
+        icon: icons/adjustments-horizontal.svg
       - title: Static Web + CMS  = Awesome
-        text: "Control your static website fron the browse "
-      - title: Fast & Secure
-        text: |-
-          L﻿ike really really fast.
-          Static websites ftw :)
-      - title: "RSS "
-        text: S﻿hare your website with the world with the amazing RSS feeds
-      - title: 100/100/100/100/100
-        text: B﻿uild the web right
+        text: Use Netflifycms to edit the content or use the texteditor for extra nerd points.
+        icon: icons/heart.svg
+      - title: 4 Hundo!
+        text: Make the web awesome - Lighthouse scores in the 100/100/100/100 range.
+        icon: icons/cake.svg
+      - title: Fast
+        text: Its a Static websites it cant get faster than that! Its Minified Compressed and
+          stamped on twice.
+        icon: icons/bolt.svg
+      - title: "NO database "
+        text: >
+          All data & Content is in markdown or json. No fiddeling with database
+          connectors.
+        icon: icons/table-cells.svg
+      - title: "KISS "
+        text: Build on the nordic design principles of keeping things simple and removing the clutter.
+        icon: icons/rss.svg
       - title: Calendars
-        text: A﻿dd you page to your calendar - perfect for event sites
-      - title: Open Graph
-        text: S﻿haring is caring
+        text: Add pages to your Calendar as the page is an event - no more facebook events ;)
+        icon: icons/calendar.svg
+      - title: Open Graph & RSS
+        text: Sharing is caring custom preview for all social media & offcourse RSS (and sitemaps, humans and robots.txt)
+        icon: icons/share.svg
+      - title: Its all there
+        text: Everything lives in the repo
+        icon: icons/folder.svg
       - title: PWA build in
-        text: Cause we can
-      - title: 101% HTML control
-        text: The system provides only variables that the theme then rocks
-    text: "Eleven things "
+        icon: icons/device-phone-mobile.svg
+        text: HTML > Apps !
+    text: ""
 url: /
 eleventyNavigation:
   key: main
@@ -142,10 +145,12 @@ layout: page/frontpage.njk
 eleventyExcludeFromCollections: false
 ---
 
-## Hello World 👋
+👋 Hi world!
 
-Saga11 is a static website builder made for webdesigners that wants complete control of the end markup without any overhead or complex systems to battle with. 💜
+## Markdown + HTML + CSS = 💜
 
-btw Theres a cms in the backend if you dont want to fiddle with the markdown files.
+**Saga11** is a static website builder for webdesigners that dreams of:
 
-🤌 Get the code in super duper beta version : [G﻿ithub repo](https://github.com/mortendk/saga11)
+1. Complete über control of HTML, CSS & JS.
+2. ~~The complexety of "modern" web.~~
+3. CMS for editing but witout a database
