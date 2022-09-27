@@ -145,7 +145,7 @@ layout: page/frontpage.njk
 eleventyExcludeFromCollections: false
 ---
 
-### 👋
+👋 Hi world!
 
 ## Markdown + HTML + CSS = 💜
 
