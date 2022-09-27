@@ -2,16 +2,11 @@
 layout: default.njk
 saga-template-name: Frontpage
 ---
-{#
-------------------------------------------------
-FRONTPAGE TEMPLATE
-------------------------------------------------
-Specfic page to control the layout for the frontpage
-#}
+}
 {%- if env.mode != 'prod' %}<!-- /Users/mdk/Web/saga11/src/themes/grunn/layouts/page/frontpage.njk  -->{%- endif -%}
 
-<article class="flex flex-col md:flex-row mt-4">
-  <div class="aspect-video overflow-hidden -rotate-2">
+{# <article class="flex flex-col md:flex-row mt-4"> #}
+  {# <div class="aspect-video overflow-hidden -rotate-2">
     {% picture
       img=image,
       width=[640,1024, 1563],
@@ -19,12 +14,12 @@ Specfic page to control the layout for the frontpage
       css="shadow rounded-xl",
       loading = "eager"
     %}
-  </div>
+  </div> #}
 
   <div class="prose prose-xl dark:prose-invert p-4 bg-white rounded-md shadow-xl dark:bg-slate-700 rotate-2 md:-ml-8 -mt-16 border border-slate-100 dark:border-slate-800">
     {{ content | safe }}
-  </div>
+  </article>
 
-</article>
+{# </article> #}
 
 {% include "components/all.njk" %}
