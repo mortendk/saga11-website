@@ -8,7 +8,7 @@
   "rss": true,
   "splashscreen": false,
   "authorname": "Saga 11",
-  "errorpage": "404 !",
+  "errorpage": "404",
   "title": "Saga 11",
   "description": "a Small cms for static generated websites"
 }
