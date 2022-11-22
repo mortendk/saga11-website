@@ -1,16 +1,14 @@
 {
-  "zip": "",
-  "humantxt": "/* TEAM */\n\n/* THANKS */\n\n/* SITE */\nStandards: HTML5, CSS3 \nBuild on: 11ty\n\n/* Software + Assets */\nvscode: https://code.visualstudio.com\nresponsively: https://responsively.app\n\nhttps://saga11.dev\nhttps://11ty.dev\nhttps://tailwindcss.com\n\nIcons\nhttps://heroicons.com/\n",
   "color": "#7323af",
+  "faviconcolor": "#ffffff",
   "keywords": "cms, static site, small cms",
   "header": "<script defer data-domain=\"saga11.dev\" src=\"https://plausible.io/js/plausible.js\"></script>\n",
+  "mastodon_verification": "https://fosstodon.org/@saga11",
   "authoremail": "",
   "rss": true,
-  "adress": "",
+  "splashscreen": false,
   "authorname": "Saga 11",
-  "country": "",
-  "errorpage": "404 !",
-  "title": "Saga11",
-  "footer": "",
-  "description": "Small cms for static generated websites"
+  "errorpage": "404",
+  "title": "Saga 11",
+  "description": "a Small cms for static generated websites"
 }
