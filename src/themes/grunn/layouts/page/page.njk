@@ -12,8 +12,6 @@ This is the default template for the page type
 
 <h1 class="text-cyan-700 dark:text-cyan-200 text-5xl lg:text-8xl mb-8 text-center">{{ title }}</h1>
 
-{% if image %}
-
 <div class="aspect-video overflow-hidden">
   {% picture
       img=image,
@@ -23,7 +21,6 @@ This is the default template for the page type
       loading = "eager"
   %}
 </div>
-{% endif %}
 
 {% include "share.njk" %}
 
