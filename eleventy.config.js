@@ -1,45 +1,56 @@
 const path = require("path");
 const fs = require("fs");
-const env = require("./src/content/data/env.js");
+// Get settings
+const env = require("./src/content/_data/env.js");
 const settings = require("./saga11.config.js");
-// set default theme to base if nothing is set
-const theme = settings.theme || "base";
+const theme = settings.theme || "grunn";
+const packageJson = require("./package.json");
+const saga11version = packageJson.version;
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 
 async function picture(image) {
   // netlifycms have a tendency to create an empty image in the markdown image: "" so test for this and kill it
-  if (image.img == "") {
+  if (image.img == "" || !image.img) {
     return "";
-    // console.log(`❌ empty img string`);
   }
-  const src = "src" + image.img;
-  const widths = image.width || [100, 200, 400];
+
+  const widths = image.width || [640, 1024, 1563];
   const formats = image.format || ["webp", "jpeg"];
-  const sizes = image.sizes || "(min-width: 1200px) 50vw, 100vw";
+  const sizes = image.sizes || "(max-width: 640px) 50vw, 100vw";
   const css = image.css || "";
   const alt = image.alt || "";
-  const loading = image.loading || "lazy"; //lazy vs eager
+  const loading = image.loading || "lazy"; //lazy or eager
+  let src;
 
-  if (fs.existsSync(src)) {
-    // console.log(`✅  img exist: ${image.img}`);
+  if (fs.existsSync("src" + image.img)) {
+    src = "src" + image.img;
+  } else if (image.img.indexOf("http://") === 0 || image.img.indexOf("https://") === 0) {
+    src = image.img;
+  } else {
+    console.log(` nope src: ${image.img} - ${src}`);
+  }
+
+  if (src) {
     let metadata = await Image(src, {
       widths: widths,
       formats: formats,
-      outputDir: "_site/img/", // seind image directly to the site build
+      outputDir: "_site/img/", // send image directly to the site build
+      sharpOptions: {
+        animated: true,
+      },
       urlPath: "/img/",
-      // cacheOptions: {
-      //   duration: "1d",
-      //   directory: ".cache",
-      //   removeUrlQueryParams: false,
-      // },
+      cacheOptions: {
+        duration: "1d",
+        directory: ".cache",
+        removeUrlQueryParams: false,
+      },
       filenameFormat: function (id, src, width, format, options) {
-        const extension = path.extname(src);
-        const name = path.basename(src, extension);
-        return `${name}-${width}w.${format}`;
+        return `${id}-${width}w.${format}`;
       },
     });
 
@@ -66,6 +77,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(faviconsPlugin);
 
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("picture", picture);
@@ -90,8 +102,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("allPosts", require("./src/system/11ty/collection/allPosts.js"));
   eleventyConfig.addCollection("allPages", require("./src/system/11ty/collection/allPages.js"));
   eleventyConfig.addCollection("allNotification", require("./src/system/11ty/collection/allNotification.js"));
-  eleventyConfig.addCollection("tags", require("./src/system/11ty/collection/tags"));
+  eleventyConfig.addCollection("allTags", require("./src/system/11ty/collection/allTags.js"));
   eleventyConfig.addCollection("styleguide", require("./src/system/11ty/collection/styleguide.js"));
+  eleventyConfig.addCollection("tags", require("./src/system/11ty/collection/tags"));
+  eleventyConfig.addCollection("blocks", require("./src/system/11ty/collection/blocks.js"));
 
   // Transform
   if (env.mode == "prod") {
@@ -101,17 +115,25 @@ module.exports = function (eleventyConfig) {
   // PassThrough
   eleventyConfig.addPassthroughCopy("src/themes/" + theme + "/assets/");
   eleventyConfig.addPassthroughCopy("src/service-workers.js");
-  eleventyConfig.addPassthroughCopy("src/debug/");
+  eleventyConfig.addPassthroughCopy("src/themes/debug/");
 
   // global vars
-  eleventyConfig.addNunjucksGlobal("saga11version", "0.3.0 beta");
+  eleventyConfig.addNunjucksGlobal("saga11version", saga11version);
   // get the theme folder name
   eleventyConfig.addNunjucksGlobal("theme", theme);
 
   // Local Server
   eleventyConfig.setServerOptions({
-    port: 3791,
+    port: env.siteport ,
   });
+
+  // ignore README
+  eleventyConfig.ignores.add("README.md");
+
+  // the amazing theme selector
+  eleventyConfig.ignores.add("src/themes/");
+  eleventyConfig.ignores.delete("src/themes/"  + theme );
+
 
   // Directory setup
   return {
@@ -123,7 +145,7 @@ module.exports = function (eleventyConfig) {
       output: "_site",
       includes: "themes/" + theme + "/includes",
       layouts: "themes/" + theme + "/layouts",
-      data: "content/data",
+      data: "content/_data",
     },
   };
 };
